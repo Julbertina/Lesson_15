@@ -334,7 +334,6 @@
 
 .photo {
     width: 310px;
-    height: 310px;
 }
 
 .section-seventh {
@@ -353,13 +352,21 @@
     margin-top: 36px;
 }
 
-.cake,
-.rating {
+.cake {
     display: block;
 }
 
 .rating {
     border-left: 1px solid #000000;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.rating img {
+    margin-left: 71px;
+    display: block;
+    width: 128px;
 }
 
 .section-eighth {
@@ -448,7 +455,6 @@
 .footer-photo {
     display: block;
     width: 300px;
-    height: 300px;
     margin-bottom: 31px;
 }
 
@@ -699,6 +705,7 @@
 
     .section-second__list {
         justify-content: space-around;
+        align-items: center;
     }
 
     .picture-section-3 {
@@ -739,8 +746,27 @@
         width: 100%;
     }
 
-    .picture-1 {
-        width: 450px;
+    .picture-1,
+    .picture-section-3,
+    .cards-type1 .paragraph,
+    .title,
+    .paragraph,
+    .cards-type1 .title,
+    .card-text,
+    .cards-type3 .card-text,
+    .section-seventh .card-title,
+    .picture-section-8,
+    .section-nineth .paragraph,
+    .title-footer,
+    .card-footer .card-text,
+    .footer-photo,
+    .under-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .card-text {
+        margin: 40px 0;
     }
 
     .button {
@@ -748,8 +774,35 @@
         height: 60px;
     }
 
+    .picture-section-3 {
+        margin: 20px 0;
+    }
+
     .section-first__buttons {
         width: 100%;
+    }
+
+    .section-first .title,
+    .section-second__title,
+    .section-fourth__title,
+    .section-fifth__title,
+    .section-eighth__title,
+    .section-nineth__titl,
+    .cards-type1 .title,
+    .section-eighth .section-eighth__title,
+    .section-nineth .section-nineth__title {
+        font-size: 30px;
+        line-height: 40px;
+        margin: 30px 0;
+    }
+
+    .section-first .paragraph {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .section-first .paragraph.note {
+        font-size: 10px;
     }
 
     .section-first .button {
@@ -777,20 +830,57 @@
         margin-bottom: 60px;
     }
 
-    .picture-section-3 {
-        width: 500px;
+    .photo {
+        width: 250px;
     }
 
-    .picture-section-8 {
-        width: 450px;
+    .rating {
+        flex-direction: column;
+    }
+
+    .section-second,
+    .section-fourth,
+    .section-fifth,
+    .section-sixth,
+    .section-seventh,
+    .section-eighth,
+    .section-nineth {
+        padding: 50px 0 50px;
+    }
+
+    .rating img {
+        margin-left: 30px;
+        margin-bottom: 20px;
     }
 
     .section-eighth .orange {
         width: 100%;
     }
+
+    .section-sixth .fixed-conteiner,
+    .card-footer,
+    .underline-wrapper,
+    .underline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-footer .button-link,
+    .footer-logo,
+    .underline {
+        margin-bottom: 20px;
+    }
     
-    .section-eighth .section-eighth__title,
-    .section-nineth .section-nineth__title {
-        font-size: 35px;
+    .cards-type4 .card-footer:first-child {
+        margin-right: 0;
+    }
+
+    .underline-wrapper {
+        margin-top: 20px;
+    }
+
+    .footer {
+        padding: 40px 0 20px;
     }
 }
